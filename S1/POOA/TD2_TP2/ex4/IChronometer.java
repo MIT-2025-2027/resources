@@ -1,6 +1,6 @@
 package TD2_TP2.ex4;
 
-public interface ChronometreInterface {
+public interface IChronometer {
 	
 	public void start();
 	public void stop();

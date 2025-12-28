@@ -2,7 +2,7 @@ package TD2_TP2.ex4;
 
 import java.util.Date;
 
-public class Chronometer implements ChronometreInterface {
+public class Chronometer implements IChronometer {
     private final static int INIT = 0;
     private final static int RUNNING = 1;
     private final static int STOPPED = 2;
