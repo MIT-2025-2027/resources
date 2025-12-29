@@ -1,4 +1,4 @@
-package tp2.ex6;
+package td1_tp1.ex6;
 
 public class EqSecondDegre {
 	/**

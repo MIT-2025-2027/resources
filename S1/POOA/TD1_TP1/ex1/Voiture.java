@@ -1,4 +1,4 @@
-package tp2.ex1;
+package td1_tp1.ex1;
 
 public class Voiture {
 

@@ -1,4 +1,4 @@
-package tp2.ex2;
+package td1_tp1.ex2;
 
 public class Main {
 
