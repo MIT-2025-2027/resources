@@ -1,6 +1,7 @@
-package TD2_TP2.ex2;
+package td2_tp2.ex2;
 
-import tp2.ex2.Compteur;
+
+import td1_tp1.ex2.Compteur;
 
 public class Main {
 

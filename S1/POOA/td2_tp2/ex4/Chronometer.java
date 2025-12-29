@@ -1,4 +1,4 @@
-package TD2_TP2.ex4;
+package td2_tp2.ex4;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package TD2_TP2.ex3;
+package td2_tp2.ex3;
 
 public class Main {
 

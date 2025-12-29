@@ -1,4 +1,4 @@
-package TD2_TP2.ex4;
+package td2_tp2.ex4;
 
 public class Main {
     public static void delay(int ms) {
@@ -19,11 +19,6 @@ public class Main {
         chrono.stop();
         System.out.println(chrono.getTime ());
         delay(100);
-        try	{
-            chrono.throwExecption();
-        } catch (Exception e)	{
-            System.out.println("there was an exception : " + e.getMessage());
-        }
         chrono.start();
         delay(100);
         chrono.stop();
