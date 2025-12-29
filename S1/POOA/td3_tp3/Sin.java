@@ -1,8 +1,8 @@
 package td3_tp3;
 
 public class Sin extends Func1 {
-    public Sin(Function func) {
-        super(func);
+    public Sin(Function child) {
+        super(child);
     }
 
     public double getValue() {

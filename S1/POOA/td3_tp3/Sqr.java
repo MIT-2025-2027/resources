@@ -1,8 +1,8 @@
 package td3_tp3;
 
 public class Sqr extends Func1 {
-    public Sqr(Function func) {
-        super(func);
+    public Sqr(Function child) {
+        super(child);
     }
 
     public double getValue() {
