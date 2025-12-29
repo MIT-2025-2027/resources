@@ -4,9 +4,8 @@ public class Mul extends Func2 {
 	public Mul(Function leftChild, Function rightChild) {
 		super(leftChild, rightChild);
 	}
-	
-	public double getValue()
-	{
+
+	public double getValue() {
 		return this.leftChild.getValue() * this.rightChild.getValue();
 	}
 	
