@@ -3,11 +3,10 @@ package tp2.ex6;
 public class Test {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		System.out.println("Cas 1:");
 		
-		EqSecondDegre equation = new EqSecondDegre(2.0, 15.5, 3.1);
+		EqSecondDegre equation = new EqSecondDegre(-2.0, 1.0, +3.0);
 		
 		equation.afficheDiscriminant();
 		equation.resoudre();
@@ -16,7 +15,7 @@ public class Test {
 
 		System.out.println("Cas 2:");
 		// équation il a pas des solutions sur IR
-		EqSecondDegre equation2 = new EqSecondDegre(1.0, 1.0, 1.0);
+		EqSecondDegre equation2 = new EqSecondDegre(2.0, 1.0, +3.0);
 
 		equation2.afficheDiscriminant();
 		equation2.resoudre();

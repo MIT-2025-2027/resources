@@ -1,12 +1,13 @@
-package tp2.ex6;
+package tp2.ex7;
 
-public class EqSecondDegre {
+public class EqSecondDegreC {
 	/**
 	 * Les variables qui possèdent les solution de l'équation
 	 */
 	private double r1;
 	private double r2;
-
+	private Complexe z1;
+	private Complexe z2;
 	
 	/**
 	 * Le discriminant Delta
@@ -20,7 +21,7 @@ public class EqSecondDegre {
 	private double b;
 	private double c;
 	
-	public EqSecondDegre(double x1, double x2, double x3)
+	public EqSecondDegreC(double x1, double x2, double x3)
 	{
 		this.a = x1;
 		this.b = x2;
@@ -56,6 +57,23 @@ public class EqSecondDegre {
 			this.r2 = (-this.b + Math.sqrt(this.delta)) / (2 * this.a);
 		} else if (this.delta == 0) {
 			this.r1 = this.r2 = -this.b / (this.a * 2);
+		} else {
+			
+			/**
+			 * z1 = (-b - i x Racine(abs(Delta))) / 2a
+			 * z2 = (-b + i x Racine(abs(Delta))) / 2a
+			 */
+			
+			double pRealZ1 = -this.b / (2 * this.a);
+			double pImagZ1 = -Math.sqrt(Math.abs(this.delta)) / (2 * this.a);
+			
+			this.z1 = new Complexe(pRealZ1, pImagZ1);
+			
+			double pRealZ2 = -this.b / (2 * this.a);
+			double pImagZ2 = Math.sqrt(Math.abs(this.delta)) / (2 * this.a);
+			
+			this.z2 = new Complexe(pRealZ2, pImagZ2);
+					
 		}
 	}
 	 
@@ -66,8 +84,9 @@ public class EqSecondDegre {
 			System.out.println("La deuxième racine est " + this.r2);
 		} else if (this.delta == 0) {
 			System.out.println("Une seule Solution : " + this.r1);
-		} else {
-			System.out.println("Pas de solutions en R.");			
+		} else {			
+			System.out.println("La première racine complexe est " + this.z1);
+			System.out.println("La deuxième racine complexe est " + this.z2);		
 		}
 	}
 	
