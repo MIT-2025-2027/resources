@@ -4,4 +4,4 @@
 
 # Master MIT (2025–2027)
 
-Ce dépôt contient les corrections des travaux pratiques (TP) de l’ensemble des modules du Master MIT (2025–2027).
+Ce dépôt contient les corrections des travaux dirigés (TD) et des travaux pratiques (TP) de l’ensemble des modules du Master MIT (2025–2027).
