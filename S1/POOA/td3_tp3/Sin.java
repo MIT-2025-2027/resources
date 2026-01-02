@@ -9,6 +9,14 @@ public class Sin extends Func1 {
         return Math.sin(this.child.getValue());
     }
 
+    public Function getDiff() {
+        // (sin f)' = cos(f) * f'
+        return new Mul(
+                new Cos(child),
+                child.getDiff()
+        );
+    }
+
     public String toString() {
         return "sin(" + this.child.toString() + ")";
     }

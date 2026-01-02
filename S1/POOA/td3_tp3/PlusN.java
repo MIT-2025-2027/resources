@@ -1,5 +1,8 @@
 package td3_tp3;
 
+import java.util.Collections;
+import java.util.stream.Stream;
+
 public class PlusN implements Function {
     private Function[] childrens;
 
@@ -15,6 +18,14 @@ public class PlusN implements Function {
         }
 
         return somme;
+    }
+
+    public Function getDiff() {
+        Function[] diffFunctions = new Function[this.childrens.length];
+        for (int i = 0; i < this.childrens.length; i++) {
+            diffFunctions[i] = this.childrens[i].getDiff();
+        }
+        return new PlusN(diffFunctions);
     }
 
     public String toString() {

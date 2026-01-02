@@ -14,4 +14,8 @@ public class Val extends Func0 {
     public String toString() {
         return "" + this.value;
     }
+
+    public Function getDiff() {
+        return new Val(0);
+    }
 }

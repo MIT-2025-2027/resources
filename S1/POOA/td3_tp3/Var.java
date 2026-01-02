@@ -25,4 +25,8 @@ public class Var extends Func0 {
     public String toString() {
         return this.name;
     }
+
+    public Function getDiff() {
+        return new Val(1);
+    }
 }
