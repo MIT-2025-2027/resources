@@ -117,3 +117,8 @@ Gestion des droits d'accès: exercice
 **Directory Authority:** In Linux, deleting a file is technically a change to the directory (unlinking an entry), not the file itself. If you own the folder, you can delete any file inside it.
 
 ---
+
+
+ ## 
+
+> Par EL AMRANI CHAKIR
