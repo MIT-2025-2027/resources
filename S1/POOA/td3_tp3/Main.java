@@ -39,12 +39,22 @@ public class Main {
 		System.out.print(resultat);*/
 		
 		/* Exercice 6 */
-		Var x = new Var("x"), y = new Var("y"), z = new Var("z");
+		/*Var x = new Var("x"), y = new Var("y"), z = new Var("z");
 		Function x2 = new Sqr(x);
 		Function y2 = new Sqr(y);
 		Function z2 = new Sqr(z);
 		Function g = new PlusN(x2, y2, z2);
-		System.out.print(g);
+		System.out.print(g);*/
+
+		Var x = new Var("x");
+		x.setValue(2);
+
+		Function f = new Plus(new Sin(x), new Val(5));
+		Function df = f.getDiff();
+
+		System.out.println("f(x) = " + f);
+		System.out.println("f'(x) = " + df);
+
 	}
 
 }
