@@ -39,7 +39,7 @@
 
 - même inode, deux nom pour même fichier
 
-## Les Commandes:
+## Quelques Commandes
 
 ```shell
 # déplacer un fichier avec confirmation
