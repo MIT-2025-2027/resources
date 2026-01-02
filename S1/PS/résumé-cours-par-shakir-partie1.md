@@ -1,4 +1,4 @@
-# Notes Cours PS
+# Notes Cours PS Parti 1
 
 - gestion du processeur graçe au l'ordonnancement (Scheduling)
 - Unix est multi tache graçe au concept de "temps partagé"
@@ -10,13 +10,9 @@
 ## Types de fichiers
 
 - les fichers ordinaires
-  
 - les répertoires
-  
 - les liens symboliques
-  
 - les périphériques (`/dev`)
-  
 - les turbes nommés
   
 
@@ -25,17 +21,11 @@
 à chaque fichier correspond un i-noeud contenant:
 
 - le type du fichier et les droites d'accès des différents utilisateurs
-  
 - le propriétaire du fichier
-  
 - la taille du fichier (pas de sens pour les fichier spéciaux)
-  
 - le nombre de liens physiques sur le fichier
-  
 - la date de dernière modification/consultation (écriture/lecture)
-  
 - la date de dernière modification du noeud (modification d'attribus)
-  
 - l'identification de la ressource associée (pour les fichiers spéciaux)
   
 
@@ -72,75 +62,58 @@ ls -R
 ## Les Droits d'accès
 
 - chaque login fait correspondre un numéro d'identification uid (User Identifier) et un gid (Group Identifier)
-  
 - utilisateur peut appartenir à plusieurs groups
-  
 - root utilisateur il est le seut qu'il peut ajouter de nouveaux utilisateurs au système.
   
 
 ---
 
-concepts de bases
+### concepts de bases
 
 - sujet (utilisateur ou processus)
-  
 - objet (fichier)
-  
 - opérations (actions R - W - X)
   
-
 ---
 
-commands
+### commands
 
 - chown
-  
 - chgrp (2 conditions, etre le propriétaire du fichier, etre membre du groupe auquel on veut donner le fichier)
-  
 - chmod
-  
 - umask
   
-
 ---
 
 Gestion des droits d'accès: exercice
 
 - chmod o-rx RepertoireUn
-  
 - chmod g+w fichierUn
-  
 - chmod u+x fichierUn
   
-
 ---
 
-mode symbolique: g+rwx
+### Mode symbolique & ocal
 
-mode octal: 775
-
-example: 764 en octal => chmod u+rwx, g+rw, o+r
-
+- mode symbolique: g+rwx 
+- mode octal: 775
+- example: 764 en octal => chmod u+rwx, g+rw, o+r
+  
 ### umask
 
 - Fichiers : `666 - 022 = 644` → `rw-r--r--`
-  
 - Répertoires : `777 - 022 = 755` → `rwxr-xr-x`
   
-
-777-666 s'appellle le complément.
+777-666 s'appelle le complément.
 
 ---
 
-les drois d'access pour répertoire:
+### Les droits d'accès pour répertoire:
 
 - **r (read)** → can list filenames inside (`ls TP1`)
-  
 - **w (write)** → can create, delete, rename files **inside** the directory
-  
 - **x (execute)** → can **enter** the directory (`cd TP1`) and access files
   
-
 **Directory Authority:** In Linux, deleting a file is technically a change to the directory (unlinking an entry), not the file itself. If you own the folder, you can delete any file inside it.
 
 ---
