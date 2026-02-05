@@ -1,10 +1,7 @@
-|
+# Offres Étudiants
 
-| **Offre** | **Description** | **Link** | **Date** d'expiration |
-|-------|-------------|------|-------------------|
-| GitHub Student Developer Pack      | Le GitHub Student Developer Pack est un ensemble d’avantages gratuits pour les étudiants vérifiés, offrant plus de 80 outils professionnels pour apprendre à coder, construire des projets et collaborer. Il inclut notamment crédits cloud (DigitalOcean, Microsoft Azure), licences gratuites d’IDE et outils (JetBrains, GitHub Pro, Visual Studio Code), accès à GitHub Copilot Pro, et bien d’autres services de développement, design, productivité ou apprentissage. Vous pouvez y accéder gratuitement tant que vous êtes étudiant avec une adresse ou une preuve scolaire valide.<br/>**Remarque** : Pour bénéficier du GitHub Student Pack, vous devez ajouter votre adresse e-mail universitaire à votre compte GitHub et la vérifier. Vous aurez également besoin d’une attestation de scolarité, que vous pouvez demander facilement via le site de votre université.            | https://education.github.com/pack     |  Valable tant que vous êtes étudiant.                 |
-|       |             |      |                   |
-|       |             |      |                   |
-|       |             |      |                   |
-|       |             |      |                   |
+| Titre | Lien | Date d’expiration | Produits couverts (priorité →) | Par |
+|------|------|------------------|----------------------------------|-----|
+| GitHub Student Developer Pack | https://education.github.com/pack | N/A | **GitHub Pro**, **GitHub Copilot**, **JetBrains IDEs**, DigitalOcean Credits, Microsoft Azure Credits, Namecheap (domaine), Canva, Heroku, etc. | Ibrahim LASFAR |
+| Microsoft Student / Azure for Students | [https://www.microsoft.com/en-us/m...](https://www.microsoft.com/en-us/microsoft-365/blog/2026/01/15/college-students-now-get-12-months-of-microsoft-365-premium-and-linkedin-premium-career-on-us/) | N/A | **Microsoft 365 (Word, Excel, PowerPoint, Outlook, OneDrive)**, **LinkedIn Premium Career (12 mois)**, **Azure Credits**, Microsoft Learn, Developer Tools | Chakir EL AMRANI |
 
